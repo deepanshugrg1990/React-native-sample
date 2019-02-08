@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Image, StyleSheet, View} from 'react-native';
+import {Image, StyleSheet, Text, View} from 'react-native';
 
 class ViewPagerScreen extends Component {
 
@@ -28,6 +28,9 @@ class ViewPagerScreen extends Component {
                             <Image style={{width: 100, height: 100}} source={item.icon}/>
                         </View>
                     </View>
+
+                    <Text style={styles.textStyle}>{item.title}</Text>
+                    <Text style={styles.textStyleTwo}>{item.subTitle}</Text>
                 </View>
             )
         })
@@ -52,7 +55,17 @@ const styles = StyleSheet.create({
         backgroundColor: 'gray'
     },
     topBackGround:{
-        backgroundColor: 'white', alignItems: 'center'
+        backgroundColor: 'white', alignItems: 'center',
+        flexDirection:'column'
+    },
+    textStyle:{
+        marginTop:320,
+        fontSize:25,
+        color:'black'
+    },
+    textStyleTwo:{
+        fontSize:15,
+        color:'black',
     }
 });
 

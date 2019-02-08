@@ -14,9 +14,9 @@ class ManageProfileScreen extends Component {
     render() {
         return (
             <View style={{flex: 1}}>
-                <View style={{marginTop: 100}}>
+                <View style={{marginTop: 80}}>
                     <IndicatorViewPager
-                        style={{height: 400}}
+                        style={{height: 420}}
                         indicator={this._renderDotIndicator()}>
                         <ViewPagerScreen
                             data={Utility.getViewData()}

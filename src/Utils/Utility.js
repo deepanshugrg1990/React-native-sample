@@ -40,7 +40,7 @@ export function getViewData() {
         },
         {
             icon: require('../assets/drawable/praying.png'),
-            text: "prayer",
+            title: "Prayer",
             subTitle: "When going to pray select this profile."
         }
 
